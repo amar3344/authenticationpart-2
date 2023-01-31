@@ -1,110 +1,58 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
 .home-container {
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  width: 90%;
-  max-width: 1110px;
 }
 
-@media screen and (min-width: 768px) {
-  .home-container {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 50px;
-  }
-}
-
-.home-content {
+.home-body-con {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .home-content {
-    align-items: flex-start;
-  }
-}
-
-.home-mobile-img {
-  width: 206px;
-}
-
-@media screen and (min-width: 768px) {
-  .home-mobile-img {
-    display: none;
-  }
-}
-
-.home-desktop-img {
-  width: 50%;
-  max-width: 450px;
-  margin-left: 85px;
-}
-
-@media screen and (max-width: 767px) {
-  .home-desktop-img {
-    display: none;
-  }
-}
-
-.home-heading {
-  font-family: 'Roboto';
-  font-weight: bold;
-  margin-top: 0px;
-  font-size: 36px;
+.home-body-con h1 {
   color: #1e293b;
-  text-align: center;
+  padding: 0px 0px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  .home-heading {
-    font-size: 46px;
-    text-align: left;
-  }
+.home-body-con p {
+  color: #475569;
+  padding: 0px 15px;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.home-description {
-  font-family: 'Roboto';
-  margin-top: 36px;
-  font-size: 14px;
-  line-height: 28px;
-  color: #64748b;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .home-description {
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: left;
-  }
-}
-
-.shop-now-button {
-  width: 60%;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Roboto';
-  color: #ffffff;
-  border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 6px;
+.home-body-con button {
   background-color: #0967d2;
-  margin-top: 20px;
-  cursor: pointer;
-  outline: none;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 50px;
 }
 
-@media screen and (min-width: 768px) {
-  .shop-now-button {
-    width: 150px;
-    font-size: 16px;
-  }
+.image-clothes {
+  width: 100%;
+  padding: 10px 20px;
 }
+
+/* Hex: #1e293b
+Hex: #ffffff
+Hex: #475569
+Hex: #e6f6ff
+Hex: #d7dfe9
+Hex: #e2e8f0
+Hex: #64748b
+Hex: #0b69ff
+Hex: #ff0b37
+Hex: #0967d2 */

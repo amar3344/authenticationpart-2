@@ -1,4 +1,4 @@
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import './index.css'
@@ -24,23 +24,35 @@ const Header = props => {
           onClick={onClickLogout}
         />
       </div>
-      <nav>
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
-          alt="nav-home"
-          className="nav-links"
-        />
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png "
-          alt="nav-products"
-          className="nav-links"
-        />
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
-          alt="nav-cart"
-          className="nav-links"
-        />
-      </nav>
+      <ul>
+        <li>
+          <Link to="/">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-home-icon.png"
+              alt="nav-home"
+              className="nav-links"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link to="/products">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-products-icon.png "
+              alt="nav-products"
+              className="nav-links"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-icon.png"
+              alt="nav-cart"
+              className="nav-links"
+            />
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }

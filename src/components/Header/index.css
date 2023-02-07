@@ -9,7 +9,7 @@
   padding: 10px;
 }
 
-.header-cont nav {
+.header-cont ul {
   background-color: #e6f6ff;
   display: flex;
   justify-content: space-around;
@@ -17,6 +17,7 @@
   padding: 10px 0px;
   border-radius: 5px;
   margin: 10px 0px;
+  list-style: none;
 }
 
 .website-logo {

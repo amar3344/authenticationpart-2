@@ -1,1 +1,5 @@
 /* Write your CSS code here */
+.cart-image {
+  width: 150px;
+  background-size: cover;
+}
